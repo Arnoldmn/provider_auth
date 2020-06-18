@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: "AfriMarket",
       theme: ThemeData(
-        primarySwatch: Colors.white,
+        primaryColor: Colors.white,
       ), home: LoginPage(),
     );
   }

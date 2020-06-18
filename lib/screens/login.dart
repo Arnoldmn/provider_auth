@@ -26,7 +26,7 @@ class _LoginPageState extends State<LoginPage> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
                 Image.asset(
-                  'images/cell.png',
+                  'images/applogo.png',
                   width: 100.0,
                 ),
               ],
@@ -45,12 +45,12 @@ class _LoginPageState extends State<LoginPage> {
             RichText(
               text: TextSpan(
                 children: [
-                  TextSpan(text: "Welcome to the"),
+                  TextSpan(text: "Welcome to the ", style: TextStyle(color: Colors.blue.shade900),),
                   TextSpan(
                     text: "AfriMarket",
                     style: TextStyle(color: Colors.blue.shade900),
                   ),
-                  TextSpan(text: " App"),
+                  TextSpan(text: " App", style: TextStyle(color: Colors.blue.shade900)),
                 ],
                 style: TextStyle(color: black),
               ),
@@ -79,6 +79,7 @@ class _LoginPageState extends State<LoginPage> {
                     icon: Icon(
                       Icons.phone_android,
                       color: grey,
+
                     ),
                     border: InputBorder.none,
                     hintText: "+254 700 890 980",
@@ -103,7 +104,10 @@ class _LoginPageState extends State<LoginPage> {
               ),
             ),
             SizedBox(height: 10),
-            CustomButton(msg: "Verify", onTap: () {})
+            CustomButton(
+              msg: "Verify",
+              onTap: () {},
+            ),
           ],
         ),
       ),
