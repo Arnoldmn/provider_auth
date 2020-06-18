@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:providerauth/screens/login.dart';
 
 void main() {
   runApp(MyApp());
@@ -7,6 +8,12 @@ void main() {
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      title: "AfriMarket",
+      theme: ThemeData(
+        primarySwatch: Colors.white,
+      ), home: LoginPage(),
+    );
   }
 }
