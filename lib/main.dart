@@ -4,6 +4,7 @@ import 'package:providerauth/helpers/style.dart';
 import 'package:providerauth/providers/auth.dart';
 import 'package:providerauth/screens/home.dart';
 import 'package:providerauth/screens/login.dart';
+import 'package:providerauth/screens/splash.dart';
 
 void main() {
   runApp(
@@ -48,17 +49,4 @@ class ScreenController extends StatelessWidget {
   }
 }
 
-class SplashScreen extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: white,
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: <Widget>[
-          CircularProgressIndicator(),
-        ],
-      ),
-    );
-  }
-}
+
